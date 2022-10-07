@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/AdventPro-Light.ttf",
+      "sha1": "bb4819295a10539077149998be84ea6d9c748ae8"
+    },
+    {
+      "path": "src/assets/fonts/AdventPro-Regular.ttf",
+      "sha1": "bc4fd03ad86e94b634c5355708213b8d710933b5"
+    }
+  ]
+}
