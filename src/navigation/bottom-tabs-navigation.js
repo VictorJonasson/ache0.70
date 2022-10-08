@@ -24,9 +24,21 @@ const BottomTabBar = ({navigation, state}) => (
 
 const TabNavigator = () => (
   <Navigator tabBar={props => <BottomTabBar {...props} />}>
-    <Screen name="DailyAcheScreen" component={DailyAcheScreen} />
-    <Screen name="ProfileScreen" component={ProfileScreen} />
-    <Screen name="CalendarScreen" component={HistoryScreen} />
+    <Screen
+      options={{headerShown: false}}
+      name="DailyAcheScreen"
+      component={DailyAcheScreen}
+    />
+    <Screen
+      options={{headerShown: false}}
+      name="ProfileScreen"
+      component={ProfileScreen}
+    />
+    <Screen
+      options={{headerShown: false}}
+      name="CalendarScreen"
+      component={HistoryScreen}
+    />
   </Navigator>
 );
 

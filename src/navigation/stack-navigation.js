@@ -13,6 +13,7 @@ const StackNavigation = () => (
     <Stack.Navigator>
       <Stack.Screen
         name="landingScreen"
+        title=""
         component={LandingScreen}
         options={{
           headerShown: false,
@@ -24,10 +25,10 @@ const StackNavigation = () => (
       />
       <Stack.Screen
         name="HomeScreen"
+        title=""
         component={HomeScreen}
         options={{
           headerShown: false,
-          title: '',
           headerStyle: {
             backgroundColor: theme['color-primary-500'],
           },
