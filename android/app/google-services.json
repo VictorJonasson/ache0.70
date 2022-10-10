@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1035977767762",
+    "project_id": "ache-6e10e",
+    "storage_bucket": "ache-6e10e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035977767762:android:6bf49f14e376f47a26188b",
+        "android_client_info": {
+          "package_name": "com.ache"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035977767762-htbqh0ahna8mlg2nvvmqrikv405kj43d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSJRAPB4ab59-1jXiUn0S_9Vwcs48X7vo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035977767762-htbqh0ahna8mlg2nvvmqrikv405kj43d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
