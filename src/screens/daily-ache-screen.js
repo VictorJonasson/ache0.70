@@ -6,24 +6,26 @@ import {StyleSheet} from "react-native";
 import {Intensity} from "../components/home-components/intensity";
 import {addData} from "../helper functions/acheHelper";
 
-const [date, setDate] = useState('');
-const [ache, setAche] = useState('');
-const [intensity, setIntensity] = useState('');
-
-const PullDate = (data) => {
-    setDate(data);
-    console.log("Ache date " + data);
-};
-const PullAcheData = (data) => {
-    setDate(data);
-    console.log("Ache data " + data);
-};
-const PullIntensityData = (data) => {
-    setIntensity(data);
-    console.log("Ache intansity " + data);
-};
 
 export const DailyAcheScreen = (props) => {
+
+    const [date, setDate] = useState('');
+    const [ache, setAche] = useState('');
+    const [intensity, setIntensity] = useState('');
+
+    const PullDate = (data) => {
+        setDate(data);
+        console.log("Ache date " + data);
+    };
+    const PullAcheData = (data) => {
+        setAche(data);
+        console.log("Ache data " + data);
+    };
+    const PullIntensityData = (data) => {
+        setIntensity(data);
+        console.log("Ache intansity " + data);
+    };
+
     return (
         <>
             <Layout
