@@ -1,9 +1,9 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {BottomNavigation, BottomNavigationTab} from '@ui-kitten/components';
-import DailyAcheScreen from '../screens/daily-ache-screen';
-import ProfileScreen from '../screens/profile-screen';
-import HistoryScreen from '../screens/history-screen';
+import {DailyAcheScreen} from '../screens/daily-ache-screen';
+import {ProfileScreen} from '../screens/profile-screen';
+import {HistoryScreen} from '../screens/history-screen';
 import {
   BottomTabCalendarIcon,
   BottomTabAcheIcon,

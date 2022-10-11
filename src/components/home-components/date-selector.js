@@ -18,6 +18,8 @@ const DateSelector = (props) => {
             style={{
                 justifyContent: 'center',
                 alignItems: 'center',
+                flex: 0,
+                marginTop: 50,
             }}>
             <DatePicker
                 date={date}

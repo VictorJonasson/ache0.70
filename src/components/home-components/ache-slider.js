@@ -16,15 +16,10 @@ export const AcheSlider = (props) => {
     const theme = useTheme();
 
     //Needs to be assigned to be able to pass down to parent
-    const acheType = selectedAche;
-    const intensity = sliderValue;
     //Pass ache to parent
+    const acheType = selectedAche;
     useEffect((selectedAche) => {
         props.passToParent(acheType);
-    });
-    //Pass intensity to parent
-    useEffect((sliderValue) => {
-        props.passToParent(intensity);
     });
 
     useEffect(() => {
@@ -123,36 +118,6 @@ export const AcheSlider = (props) => {
                     </Text>
                 </Layout>
             </ViewPager>
-
-            <Text
-                status="primary"
-                category={'h6'}
-                appearance={'default'}
-                style={{
-                    alignSelf: 'center',
-                    fontFamily: 'AdventPro-Regular',
-                }}>
-                Intensitet
-            </Text>
-            <Slider
-                maximumValue={10}
-                minimumValue={0}
-                minimumTrackTintColor={theme['color-primary-600']}
-                maximumTrackTintColor={theme['color-primary-500']}
-                step={1}
-                value={sliderValue}
-                onValueChange={sliderValue => setSliderValue(sliderValue)}
-            />
-            <Text
-                status="primary"
-                category={'h6'}
-                appearance={'default'}
-                style={{
-                    alignSelf: 'center',
-                    fontFamily: 'AdventPro-Regular',
-                }}>
-                {sliderValue}
-            </Text>
         </>
     );
 };
