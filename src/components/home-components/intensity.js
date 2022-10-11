@@ -9,7 +9,7 @@ export const Intensity = (props) => {
     const theme = useTheme();
 
 
-    const intensity = sliderValue;
+    const intensity = sliderValue.toString();
     useEffect((sliderValue) => {
         props.passToParent(intensity);
     });

@@ -8,8 +8,8 @@ export async function getData(collection, docPathID) {
     console.log("Get user:  " + users.size);
 }
 
-export async function addData(collection, dockPathId,userId, ache, intensity, acheDate) {
-    await firestore().collection(collection).doc(dockPathId)
+export async function addData(userId, ache, intensity, acheDate) {
+    await firestore().collection('users')
         .add({
             userId: userId,
             ache: ache,

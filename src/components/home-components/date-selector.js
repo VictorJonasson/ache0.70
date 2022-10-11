@@ -4,11 +4,11 @@ import DatePicker from 'react-native-date-picker';
 
 const DateSelector = (props) => {
     const [date, setDate] = useState(new Date());
-    //Convert selected date to string.
-    const dateToString = date.toString();
     const [maxDate, setMaxDate] = useState(new Date());
 
+    //Convert selected date to string.
     //Pass date to parentView
+    const dateToString = date.toString();
     useEffect((date) => {
         props.passToParent(dateToString);
     })
@@ -23,9 +23,12 @@ const DateSelector = (props) => {
             }}>
             <DatePicker
                 date={date}
+                mode="datetime"
+                is24hourSource="locale"
+                locale='sv'
                 onDateChange={setDate}
-                fadeToColor={'#222B44'}
                 maximumDate={maxDate}
+                fadeToColor={'#222B44'}
             />
         </Layout>
     );
