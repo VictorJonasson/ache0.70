@@ -5,6 +5,7 @@ import {AcheSlider} from '../components/home-components/ache-slider';
 import {StyleSheet} from "react-native";
 import {Intensity} from "../components/home-components/intensity";
 import {addData} from "../helper functions/acheHelper";
+import {getCollection} from "../helper functions/acheHelper";
 
 
 export const DailyAcheScreen = (props) => {
@@ -14,7 +15,7 @@ export const DailyAcheScreen = (props) => {
     const [intensity, setIntensity] = useState('');
 
     const PullDate = (data) => {
-        setDate(data);
+        setDate(JSON.stringify(data));
         console.log("Ache date " + data);
     };
     const PullAcheData = (data) => {
@@ -43,11 +44,12 @@ export const DailyAcheScreen = (props) => {
                 <Button
                     style={styles.AddButton}
                     onPress={() => {
-                        addData('66', ache, intensity, date);
+                       addData(ache,intensity, date)
                     }}
                 >
                     <Text> Lägg till </Text>
                 </Button>
+
             </Layout>
         </>
     );

@@ -1,28 +1,24 @@
 import {Layout, Text, useTheme} from '@ui-kitten/components';
-import React from 'react';
+import React, {useEffect} from 'react';
 import HistoryCard from '../components/history-components/history-card';
 import {ScrollView, StyleSheet} from 'react-native';
-
-// const theme = useTheme();
+import {getCollection} from "../helper functions/acheHelper";
 
 export const HistoryScreen = () => {
-    return (<Layout style={styles.LayoutStyle}>
-            <ScrollView style={styles.scrollView}>
-                <HistoryCard/>
-            </ScrollView>
+    //Get data from helper function
+
+
+    return (
+        <Layout style={styles.layoutStyle}>
+            <HistoryCard/>
         </Layout>
     );
 };
 
 
 const styles = StyleSheet.create({
-    LayoutStyle: {
+    layoutStyle: {
         flex: 1,
-        justifyContent: 'center',
         alignItems: 'center',
-    },
-    scrollView: {
-        flex: 1,
-        width: '90%',
     },
 });
